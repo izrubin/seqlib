@@ -106,8 +106,8 @@ class Seqlib:
         newseqs = self.filter(minmaf, maxmissing)
 
         # make a new copy of the seqlib object
-        newself = copy.deepcopy(self)     
-        newself.__init__(newseqs.shape[0], newseqs.shape[1]) 
+        newself = copy.deepcopy(self)  
+        newself.__init__(newseqs.shape[0], newseqs.shape[1])
 
         # store the array (overwrite it)
         newself.seqs = newseqs

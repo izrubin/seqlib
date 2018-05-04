@@ -36,12 +36,12 @@ print(s.filter(minmaf=0.1, maxmissing=0.0)
 n = s.filter_seqlib(minmaf=0.1, maxmissing=0.0)
 
 ## view stats on the full seqarray
-s.calculate_stats()
+s.calculate_statistics()
 
 ## view stats on the modified seqarray
-n.calculate_stats()
+n.calculate_statistics()
 
 ## or do the same in one shot
-s.filter_seqlib(minmaf=0.1, maxmissing=0.0).calculate_stats()
+s.filter_seqlib(minmaf=0.1, maxmissing=0.0).calculate_statistics()
 
 ```
